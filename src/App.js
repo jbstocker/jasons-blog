@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import NavBar from './components/NavBar'
+import Navigation from './components/Navigation'
 class App extends Component {
     render() {
         return (
             <div>
-                <NavBar />
+                <Navigation />
             </div>
         )
     }
