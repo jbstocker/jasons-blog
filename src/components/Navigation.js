@@ -59,7 +59,7 @@ const styles = theme => ({
     },
 });
 
-class ResponsiveDrawer extends React.Component {
+class Naviation extends React.Component {
     state = {
         mobileOpen: false,
     };
@@ -123,24 +123,24 @@ class ResponsiveDrawer extends React.Component {
 
         return (
             <div className={classes.root}>
+                <AppBar className={classes.appBar}>
+                    <Toolbar>
+                        <IconButton
+                            color="inherit"
+                            aria-label="Open drawer"
+                            onClick={this.handleDrawerToggle}
+                            className={classes.navIconHide}
+                        >
+                            <MenuIcon />
+                        </IconButton>
+                        <div>
+                            <Typography variant="title" color="inherit" noWrap>
+                                Jason Stocker | Full Stack Developer
+                            </Typography>
+                        </div>
+                    </Toolbar>
+                </AppBar>
                 <Hidden mdUp>
-                    <AppBar className={classes.appBar}>
-                        <Toolbar>
-                            <IconButton
-                                color="inherit"
-                                aria-label="Open drawer"
-                                onClick={this.handleDrawerToggle}
-                                className={classes.navIconHide}
-                            >
-                                <MenuIcon />
-                            </IconButton>
-                            <div>
-                                <Typography variant="title" color="inherit" noWrap>
-                                    Jason Stocker | Full Stack Developer
-                                </Typography>
-                            </div>
-                        </Toolbar>
-                    </AppBar>
                     <Drawer
                         variant="temporary"
                         anchor={theme.direction === 'rtl' ? 'right' : 'left'}
@@ -167,14 +167,18 @@ class ResponsiveDrawer extends React.Component {
                         {drawer}
                     </Drawer>
                 </Hidden>
+                <main className={classes.content}>
+                    <div className={classes.toolbar} />
+                    <Typography noWrap>{'Things go here'}</Typography>
+                </main>
             </div>
         );
     }
 }
 
-ResponsiveDrawer.propTypes = {
+Naviation.propTypes = {
     classes: PropTypes.object.isRequired,
     theme: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles, { withTheme: true })(ResponsiveDrawer);
+export default withStyles(styles, { withTheme: true })(Naviation);
