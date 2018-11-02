@@ -123,7 +123,7 @@ class Naviation extends React.Component {
 
         return (
             <div className={classes.root}>
-                <AppBar className={classes.appBar}>
+                <AppBar className={classes.appBar} color="primary">
                     <Toolbar>
                         <IconButton
                             color="inherit"
