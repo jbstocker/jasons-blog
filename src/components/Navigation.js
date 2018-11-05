@@ -7,20 +7,9 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import Hidden from '@material-ui/core/Hidden';
-import Divider from '@material-ui/core/Divider';
 import MenuIcon from '@material-ui/icons/Menu';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import Person from '@material-ui/icons/Person';
-import Timeline from '@material-ui/icons/Timeline';
-import Ballot from '@material-ui/icons/Ballot';
-import Brush from '@material-ui/icons/Brush';
-import LocalLibrary from '@material-ui/icons/LocalLibrary';
-import ContactMail from '@material-ui/icons/ContactMail';
-import InsertDriveFile from '@material-ui/icons/InsertDriveFile';
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import Route from "react-router-dom/Route";
+import NavLinks from './NavLinks';
 
 const drawerWidth = 180;
 
@@ -66,7 +55,7 @@ const Skills = () => <h2>Skills</h2>;
 const Education = () => <h2>Education</h2>;
 const Contact = () => <h2>Contact</h2>;
 
-class Naviation extends React.Component {
+class Navigation extends React.Component {
     state = {
         mobileOpen: false,
     };
@@ -77,68 +66,6 @@ class Naviation extends React.Component {
 
     render() {
         const {classes, theme} = this.props;
-
-        const drawer = (
-            <div>
-                <Divider/>
-                <List component="nav">
-                    <Link to="/about/">
-                        <ListItem button>
-                            <ListItemIcon>
-                                <Person/>
-                            </ListItemIcon>
-                            <ListItemText primary="About"/>
-                        </ListItem>
-                    </Link>
-                    <Link to="/experience/">
-                        <ListItem button>
-                            <ListItemIcon>
-                                <Timeline/>
-                            </ListItemIcon>
-                            <ListItemText primary="Experience"/>
-                        </ListItem>
-                    </Link>
-                    <Link to="/projects/">
-                        <ListItem button>
-                            <ListItemIcon>
-                                <Ballot/>
-                            </ListItemIcon>
-                            <ListItemText primary="Projects"/>
-                        </ListItem>
-                    </Link>
-                    <Link to="/skills/">
-                        <ListItem button>
-                            <ListItemIcon>
-                                <Brush/>
-                            </ListItemIcon>
-                            <ListItemText primary="Skills"/>
-                        </ListItem>
-                    </Link>
-                    <Link to="/education/">
-                        <ListItem button>
-                            <ListItemIcon>
-                                <LocalLibrary/>
-                            </ListItemIcon>
-                            <ListItemText primary="Education"/>
-                        </ListItem>
-                    </Link>
-                    <Link to="/contact/">
-                        <ListItem button>
-                            <ListItemIcon>
-                                <ContactMail/>
-                            </ListItemIcon>
-                            <ListItemText primary="Contact"/>
-                        </ListItem>
-                    </Link>
-                    <ListItem button>
-                        <ListItemIcon>
-                            <InsertDriveFile/>
-                        </ListItemIcon>
-                        <ListItemText primary="Resume"/>
-                    </ListItem>
-                </List>
-            </div>
-        );
 
         return (
             <div className={classes.root}>
@@ -172,7 +99,7 @@ class Naviation extends React.Component {
                             keepMounted: true, // Better open performance on mobile.
                         }}
                     >
-                        {drawer}
+                        <NavLinks />
                     </Drawer>
                 </Hidden>
                 <Hidden smDown implementation="css">
@@ -183,12 +110,12 @@ class Naviation extends React.Component {
                             paper: classes.drawerPaper,
                         }}
                     >
-                        {drawer}
+                        <NavLinks />
                     </Drawer>
                 </Hidden>
                 <main className={classes.content}>
                     <div className={classes.toolbar}/>
-                    {/*<Typography noWrap>{'Things go here'}</Typography>*/}
+                    <Typography noWrap>{'Things go here'}</Typography>
                     <Route path="/about/" component={About}/>
                     <Route path="/experience/" component={Experience}/>
                     <Route path="/projects/" component={Projects}/>
@@ -201,9 +128,9 @@ class Naviation extends React.Component {
     }
 }
 
-Naviation.propTypes = {
+Navigation.propTypes = {
     classes: PropTypes.object.isRequired,
     theme: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles, {withTheme: true})(Naviation);
+export default withStyles(styles, {withTheme: true})(Navigation);

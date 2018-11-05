@@ -13,6 +13,6 @@ const NavBar = () => {
                 </Toolbar>
             </AppBar>
         </div>
-    )
+    );
 }
 export default NavBar;
