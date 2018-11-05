@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -20,13 +20,13 @@ import Brush from '@material-ui/icons/Brush';
 import LocalLibrary from '@material-ui/icons/LocalLibrary';
 import ContactMail from '@material-ui/icons/ContactMail';
 import InsertDriveFile from '@material-ui/icons/InsertDriveFile';
+import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 const drawerWidth = 180;
 
 const styles = theme => ({
     root: {
         flexGrow: 1,
-        height: 600,
         zIndex: 1,
         overflow: 'hidden',
         position: 'relative',
@@ -59,63 +59,82 @@ const styles = theme => ({
     },
 });
 
+const About = () => <h2>About</h2>;
+const Experience = () => <h2>Experience</h2>;
+const Projects = () => <h2>Projects</h2>;
+const Skills = () => <h2>Skills</h2>;
+const Education = () => <h2>Education</h2>;
+const Contact = () => <h2>Contact</h2>;
+
 class Naviation extends React.Component {
     state = {
         mobileOpen: false,
     };
 
     handleDrawerToggle = () => {
-        this.setState(state => ({ mobileOpen: !state.mobileOpen }));
+        this.setState(state => ({mobileOpen: !state.mobileOpen}));
     };
 
     render() {
-        const { classes, theme } = this.props;
+        const {classes, theme} = this.props;
 
         const drawer = (
             <div>
-                <Divider />
+                <Divider/>
                 <List component="nav">
+                    <Link to="/about/">
+                        <ListItem button>
+                            <ListItemIcon>
+                                <Person/>
+                            </ListItemIcon>
+                            <ListItemText primary="About"/>
+                        </ListItem>
+                    </Link>
+                    <Link to="/experience/">
+                        <ListItem button>
+                            <ListItemIcon>
+                                <Timeline/>
+                            </ListItemIcon>
+                            <ListItemText primary="Experience"/>
+                        </ListItem>
+                    </Link>
+                    <Link to="/projects/">
+                        <ListItem button>
+                            <ListItemIcon>
+                                <Ballot/>
+                            </ListItemIcon>
+                            <ListItemText primary="Projects"/>
+                        </ListItem>
+                    </Link>
+                    <Link to="/skills/">
+                        <ListItem button>
+                            <ListItemIcon>
+                                <Brush/>
+                            </ListItemIcon>
+                            <ListItemText primary="Skills"/>
+                        </ListItem>
+                    </Link>
+                    <Link to="/education/">
+                        <ListItem button>
+                            <ListItemIcon>
+                                <LocalLibrary/>
+                            </ListItemIcon>
+                            <ListItemText primary="Education"/>
+                        </ListItem>
+                    </Link>
+                    <Link to="/contact/">
+                        <ListItem button>
+                            <ListItemIcon>
+                                <ContactMail/>
+                            </ListItemIcon>
+                            <ListItemText primary="Contact"/>
+                        </ListItem>
+                    </Link>
                     <ListItem button>
                         <ListItemIcon>
-                            <Person />
+                            <InsertDriveFile/>
                         </ListItemIcon>
-                        <ListItemText primary="About" />
-                    </ListItem>
-                    <ListItem button>
-                        <ListItemIcon>
-                            <Timeline />
-                        </ListItemIcon>
-                        <ListItemText primary="Experience" />
-                    </ListItem>
-                    <ListItem button>
-                        <ListItemIcon>
-                            <Ballot />
-                        </ListItemIcon>
-                        <ListItemText primary="Projects" />
-                    </ListItem>
-                    <ListItem button>
-                        <ListItemIcon>
-                            <Brush />
-                        </ListItemIcon>
-                        <ListItemText primary="Skills" />
-                    </ListItem>
-                    <ListItem button>
-                        <ListItemIcon>
-                            <LocalLibrary />
-                        </ListItemIcon>
-                        <ListItemText primary="Education" />
-                    </ListItem>
-                    <ListItem button>
-                        <ListItemIcon>
-                            <ContactMail />
-                        </ListItemIcon>
-                        <ListItemText primary="Contact" />
-                    </ListItem>
-                    <ListItem button>
-                        <ListItemIcon>
-                            <InsertDriveFile />
-                        </ListItemIcon>
-                        <ListItemText primary="Resume" />
+                        <ListItemText primary="Resume"/>
                     </ListItem>
                 </List>
             </div>
@@ -131,7 +150,7 @@ class Naviation extends React.Component {
                             onClick={this.handleDrawerToggle}
                             className={classes.navIconHide}
                         >
-                            <MenuIcon />
+                            <MenuIcon/>
                         </IconButton>
                         <div>
                             <Typography variant="title" color="inherit" noWrap>
@@ -168,8 +187,14 @@ class Naviation extends React.Component {
                     </Drawer>
                 </Hidden>
                 <main className={classes.content}>
-                    <div className={classes.toolbar} />
-                    <Typography noWrap>{'Things go here'}</Typography>
+                    <div className={classes.toolbar}/>
+                    {/*<Typography noWrap>{'Things go here'}</Typography>*/}
+                    <Route path="/about/" component={About}/>
+                    <Route path="/experience/" component={Experience}/>
+                    <Route path="/projects/" component={Projects}/>
+                    <Route path="/skills/" component={Skills}/>
+                    <Route path="/education/" component={Education}/>
+                    <Route path="/contact/" component={Contact}/>
                 </main>
             </div>
         );
@@ -181,4 +206,4 @@ Naviation.propTypes = {
     theme: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles, { withTheme: true })(Naviation);
+export default withStyles(styles, {withTheme: true})(Naviation);
