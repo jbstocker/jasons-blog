@@ -19,7 +19,7 @@ const NavLinks = () => {
             <div>
                 <Divider/>
                 <List component="nav">
-                    <NavLink to="/about/">
+                    <NavLink to="/" style={{ textDecoration: 'none' }}>
                         <ListItem button>
                             <ListItemIcon>
                                 <Person/>
@@ -27,7 +27,7 @@ const NavLinks = () => {
                             <ListItemText primary="About"/>
                         </ListItem>
                     </NavLink>
-                    <NavLink to="/experience/">
+                    <NavLink to="/experience/" style={{ textDecoration: 'none' }}>
                         <ListItem button>
                             <ListItemIcon>
                                 <Timeline/>
@@ -35,7 +35,7 @@ const NavLinks = () => {
                             <ListItemText primary="Experience"/>
                         </ListItem>
                     </NavLink>
-                    <NavLink to="/projects/">
+                    <NavLink to="/projects/" style={{ textDecoration: 'none' }}>
                         <ListItem button>
                             <ListItemIcon>
                                 <Ballot/>
@@ -43,7 +43,7 @@ const NavLinks = () => {
                             <ListItemText primary="Projects"/>
                         </ListItem>
                     </NavLink>
-                    <NavLink to="/skills/">
+                    <NavLink to="/skills/" style={{ textDecoration: 'none' }}>
                         <ListItem button>
                             <ListItemIcon>
                                 <Brush/>
@@ -51,7 +51,7 @@ const NavLinks = () => {
                             <ListItemText primary="Skills"/>
                         </ListItem>
                     </NavLink>
-                    <NavLink to="/education/">
+                    <NavLink to="/education/" style={{ textDecoration: 'none' }}>
                         <ListItem button>
                             <ListItemIcon>
                                 <LocalLibrary/>
@@ -59,7 +59,7 @@ const NavLinks = () => {
                             <ListItemText primary="Education"/>
                         </ListItem>
                     </NavLink>
-                    <NavLink to="/contact/">
+                    <NavLink to="/contact/" style={{ textDecoration: 'none' }}>
                         <ListItem button>
                             <ListItemIcon>
                                 <ContactMail/>
@@ -67,12 +67,16 @@ const NavLinks = () => {
                             <ListItemText primary="Contact"/>
                         </ListItem>
                     </NavLink>
+                    <a href="https://drive.google.com/open?id=0B_Wzh_m-Qs6YdDFCTHlKOEExcjg"
+                       target="_blank"
+                       style={{ textDecoration: 'none' }}>
                     <ListItem button>
                         <ListItemIcon>
                             <InsertDriveFile/>
                         </ListItemIcon>
                         <ListItemText primary="Resume"/>
                     </ListItem>
+                    </a>
                 </List>
             </div>
         );

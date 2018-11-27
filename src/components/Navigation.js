@@ -12,6 +12,10 @@ import Route from "react-router-dom/Route";
 import NavLinks from './NavLinks';
 import About from './About';
 import Experience  from './Experience';
+import Education  from './Education';
+import Contact  from './Contact';
+import Projects  from './Projects';
+import Skills  from './Skills';
 
 const drawerWidth = 180;
 
@@ -49,11 +53,6 @@ const styles = theme => ({
         padding: theme.spacing.unit * 3,
     },
 });
-
-const Projects = () => <h2>Projects</h2>;
-const Skills = () => <h2>Skills</h2>;
-const Education = () => <h2>Education</h2>;
-const Contact = () => <h2>Contact</h2>;
 
 class Navigation extends React.Component {
     state = {
@@ -115,14 +114,12 @@ class Navigation extends React.Component {
                 </Hidden>
                 <main className={classes.content}>
                     <div className={classes.toolbar}/>
-                    <Route path="/about/" component={About}/>
+                    <Route exact path="/" component={About}/>
                     <Route path="/experience/" component={Experience}/>
                     <Route path="/projects/" component={Projects}/>
                     <Route path="/skills/" component={Skills}/>
                     <Route path="/education/" component={Education}/>
                     <Route path="/contact/" component={Contact}/>
-                    <About />
-                    <Experience />
                 </main>
             </div>
         );
