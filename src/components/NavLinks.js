@@ -11,7 +11,7 @@ import Brush from '@material-ui/icons/Brush';
 import LocalLibrary from '@material-ui/icons/LocalLibrary';
 import ContactMail from '@material-ui/icons/ContactMail';
 import InsertDriveFile from '@material-ui/icons/InsertDriveFile';
-import Link from "react-router-dom/Link";
+import NavLink from "react-router-dom/NavLink";
 
 
 const NavLinks = () => {
@@ -19,54 +19,54 @@ const NavLinks = () => {
             <div>
                 <Divider/>
                 <List component="nav">
-                    <Link to="/about/">
+                    <NavLink to="/about/">
                         <ListItem button>
                             <ListItemIcon>
                                 <Person/>
                             </ListItemIcon>
                             <ListItemText primary="About"/>
                         </ListItem>
-                    </Link>
-                    <Link to="/experience/">
+                    </NavLink>
+                    <NavLink to="/experience/">
                         <ListItem button>
                             <ListItemIcon>
                                 <Timeline/>
                             </ListItemIcon>
                             <ListItemText primary="Experience"/>
                         </ListItem>
-                    </Link>
-                    <Link to="/projects/">
+                    </NavLink>
+                    <NavLink to="/projects/">
                         <ListItem button>
                             <ListItemIcon>
                                 <Ballot/>
                             </ListItemIcon>
                             <ListItemText primary="Projects"/>
                         </ListItem>
-                    </Link>
-                    <Link to="/skills/">
+                    </NavLink>
+                    <NavLink to="/skills/">
                         <ListItem button>
                             <ListItemIcon>
                                 <Brush/>
                             </ListItemIcon>
                             <ListItemText primary="Skills"/>
                         </ListItem>
-                    </Link>
-                    <Link to="/education/">
+                    </NavLink>
+                    <NavLink to="/education/">
                         <ListItem button>
                             <ListItemIcon>
                                 <LocalLibrary/>
                             </ListItemIcon>
                             <ListItemText primary="Education"/>
                         </ListItem>
-                    </Link>
-                    <Link to="/contact/">
+                    </NavLink>
+                    <NavLink to="/contact/">
                         <ListItem button>
                             <ListItemIcon>
                                 <ContactMail/>
                             </ListItemIcon>
                             <ListItemText primary="Contact"/>
                         </ListItem>
-                    </Link>
+                    </NavLink>
                     <ListItem button>
                         <ListItemIcon>
                             <InsertDriveFile/>

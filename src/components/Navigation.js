@@ -10,6 +10,9 @@ import Hidden from '@material-ui/core/Hidden';
 import MenuIcon from '@material-ui/icons/Menu';
 import Route from "react-router-dom/Route";
 import NavLinks from './NavLinks';
+import About from './About';
+import Experience  from './Experience';
+
 
 const drawerWidth = 180;
 
@@ -48,8 +51,6 @@ const styles = theme => ({
     },
 });
 
-const About = () => <h2>About</h2>;
-const Experience = () => <h2>Experience</h2>;
 const Projects = () => <h2>Projects</h2>;
 const Skills = () => <h2>Skills</h2>;
 const Education = () => <h2>Education</h2>;
@@ -115,13 +116,14 @@ class Navigation extends React.Component {
                 </Hidden>
                 <main className={classes.content}>
                     <div className={classes.toolbar}/>
-                    <Typography noWrap>{'Things go here'}</Typography>
                     <Route path="/about/" component={About}/>
                     <Route path="/experience/" component={Experience}/>
                     <Route path="/projects/" component={Projects}/>
                     <Route path="/skills/" component={Skills}/>
                     <Route path="/education/" component={Education}/>
                     <Route path="/contact/" component={Contact}/>
+                    <About />
+                    <Experience />
                 </main>
             </div>
         );
