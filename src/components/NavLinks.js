@@ -4,7 +4,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import Paper from '@material-ui/core/Paper';
 import Person from '@material-ui/icons/Person';
 import Timeline from '@material-ui/icons/Timeline';
 import Ballot from '@material-ui/icons/Ballot';
@@ -13,8 +12,6 @@ import LocalLibrary from '@material-ui/icons/LocalLibrary';
 import ContactMail from '@material-ui/icons/ContactMail';
 import InsertDriveFile from '@material-ui/icons/InsertDriveFile';
 import NavLink from "react-router-dom/NavLink";
-import { Typography } from '@material-ui/core';
-
 
 const NavLinks = () => {
         return (

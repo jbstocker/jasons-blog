@@ -1,8 +1,5 @@
 import React from 'react';
-import croppedSuit from '../media/croppedSuit.jpg'
-import bwProfile from '../media/bwprofile.jpg'
 import bwMountain from '../media/bwMountain.jpg'
-
 
 const About = () => {
     return (
