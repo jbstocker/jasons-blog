@@ -8,14 +8,14 @@ const styles = {
     height: "100%",
     backgroundImage: `url(${bwMountain})`,
     backgroundSize: "contain",
-    backgroundRepeat: "no-repeat"
+    backgroundRepeat: "no-repeat",
   },
   paperStyle: {
     position: "relative",
     top: "5%",
     left: "55%",
     width: "40%",
-    align: "right"
+    align: "right",
   }
 };
 
