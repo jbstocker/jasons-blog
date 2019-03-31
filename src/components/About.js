@@ -42,7 +42,7 @@ const About = () => {
           taking photos or (attempting) to build furniture. Please feel 
           free to browse my personal site, it's currently a work in progress
           and I hope to start publishing a photo-blog here shortly. This
-          page was designed using React and Material-UI, and is hosted
+          page was designed using ReactJS and Material-UI, and it is hosted
           via Amazon Web Services (AWS).
         </Typography>
         <Typography style={styles.paragraph} component="p"> </Typography>
