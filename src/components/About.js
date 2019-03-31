@@ -4,10 +4,9 @@ import { Paper, Typography } from "@material-ui/core";
 
 const styles = {
   sectionStyle: {
-    width: "100%",
-    height: "100%",
+    height: "160%",
     backgroundImage: `url(${bwMountain})`,
-    backgroundSize: "contain",
+    backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
   },
   paperStyle: {
