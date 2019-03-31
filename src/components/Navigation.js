@@ -80,7 +80,7 @@ class Navigation extends React.Component {
                         </IconButton>
                         <div>
                             <Typography variant="title" color="inherit" noWrap>
-                                Jason Stocker | Full Stack Developer
+                                Jason Stocker | Software Engineer
                             </Typography>
                         </div>
                     </Toolbar>
