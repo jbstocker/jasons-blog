@@ -76,7 +76,7 @@ const NavLinks = () => {
             <ListItemIcon>
               <InsertDriveFile />
             </ListItemIcon>
-            <ListItemText primary="Resume" />
+            <ListItemText primary="Resume (.pdf)" />
           </ListItem>
         </a>
       </List>
