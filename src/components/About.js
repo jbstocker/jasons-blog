@@ -4,7 +4,7 @@ import { Paper, Typography } from "@material-ui/core";
 
 const styles = {
   section: {
-    height: '160%',
+    height: '150%',
     backgroundImage: `url(${bwMountain})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -12,9 +12,11 @@ const styles = {
   paper: {
     position: 'relative',
     top: '5%',
-    left: '55%',
-    width: '40%',
+    marginLeft: 'auto',
+    marginRight: '2em',
+    maxWidth: '400px',
     align: 'right',
+    opacity: '0.8'
   },
   header: {
     padding: '10px',
@@ -22,7 +24,7 @@ const styles = {
     fontWeight: '700',
   },
   paragraph: {
-    padding: '0px 10px 10px 10px',
+    padding: '0px 20px 10px 20px',
     fontSize: '1.1em'
   }
 };
@@ -35,12 +37,15 @@ const About = () => {
           Welcome!
         </Typography>
         <Typography style={styles.paragraph} component="p">
-          My name is Jason Stocker, and I'm a full stack software
+          My name is Jason Stocker, and I'm a full-stack software
           engineer. When I'm not building websites you'll find me outside 
           taking photos or (attempting) to build furniture. Please feel 
           free to browse my personal site, it's currently a work in progress
-          and I hope to start publishing a photo-blog here shortly. 
+          and I hope to start publishing a photo-blog here shortly. This
+          page was designed using React and Material-UI, and is hosted
+          via Amazon Web Services (AWS).
         </Typography>
+        <Typography style={styles.paragraph} component="p"> </Typography>
         <Typography style={styles.paragraph} component="p">
           Thanks for stopping by!
         </Typography>

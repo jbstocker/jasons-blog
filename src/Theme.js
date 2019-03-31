@@ -5,5 +5,12 @@ export default createMuiTheme({
   palette: {
     primary: teal,
     secondary: teal
+  },
+  overrides: {
+    MuiListItem: {
+      root: {
+        color: '#008080',
+      },
+    }
   }
 });
