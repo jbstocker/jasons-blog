@@ -66,7 +66,7 @@ const NavLinks = () => {
                             <ListItemText primary="Contact"/>
                         </ListItem>
                     </NavLink>
-                    <a href="https://drive.google.com/open?id=0B_Wzh_m-Qs6YdDFCTHlKOEExcjg"
+                    <a href="https://drive.google.com/file/d/1cnQXM39H5w0zLte5Q_dd0UTt5794eJwr/view?usp=sharing"
                        target="_blank"
                        rel="noopener noreferrer"
                        style={{ textDecoration: 'none' }}>
