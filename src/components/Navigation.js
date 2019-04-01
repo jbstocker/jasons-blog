@@ -25,7 +25,8 @@ const styles = theme => ({
     zIndex: 1,
     position: "relative",
     display: "flex",
-    width: "100%"
+    width: "100%",
+    height: "600px",
   },
   appBar: {
     position: "absolute",
