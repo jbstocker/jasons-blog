@@ -14,7 +14,7 @@ const styles = {
     top: '5%',
     marginLeft: 'auto',
     marginRight: '2em',
-    maxWidth: '400px',
+    maxWidth: '32em',
     align: 'right',
     opacity: '0.8'
   },
