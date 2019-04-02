@@ -8,3 +8,7 @@ body {
   font-family: sans-serif;
   height: 100%;
 }
+
+div#root {
+  height: 100%
+}

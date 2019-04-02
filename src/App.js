@@ -9,9 +9,7 @@ class App extends Component {
     return (
       <MuiThemeProvider theme={Theme}>
         <HashRouter>
-          <div>
             <Navigation />
-          </div>
         </HashRouter>
       </MuiThemeProvider>
     );
