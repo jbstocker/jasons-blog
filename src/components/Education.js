@@ -1,6 +1,6 @@
 import React from "react";
-import psuCampus from "../media/psuCampus1.jpg";
-import umCampus from "../media/uMarylandCampus1.png";
+import psuCampus from "../media/psuCampus4.jpg";
+import umCampus from "../media/uMarylandCampus2.jpg";
 import { Paper, Typography } from "@material-ui/core";
 
 const styles = {
@@ -22,18 +22,18 @@ const styles = {
   psuPaper: {
     position: 'relative',
     top: '5%',
-    marginLeft: 'auto',
-    marginRight: '2em',
-    maxWidth: '32em',
+    marginLeft: '2em',
+    marginRight: 'auto',
+    maxWidth: '25em',
     align: 'right',
     opacity: '0.9'
   },
   umPaper: {
     position: 'relative',
     top: '5%',
-    marginLeft: '2em',
-    marginRight: 'auto',
-    maxWidth: '32em',
+    marginLeft: 'auto',
+    marginRight: '2em',
+    maxWidth: '25em',
     align: 'right',
     opacity: '0.9'
   },
@@ -41,10 +41,11 @@ const styles = {
     padding: '10px',
     color: 'teal',
     fontWeight: '700',
+    fontSize: '1em',
   },
   paragraph: {
     padding: '0px 20px 10px 20px',
-    fontSize: '1.1em'
+    fontSize: '1em'
   }
 };
 
@@ -59,10 +60,6 @@ const Education = () => {
         <Typography style={styles.paragraph} component="p">
           I got my degree at penn state!
         </Typography>
-        <Typography style={styles.paragraph} component="p"> </Typography>
-        <Typography style={styles.paragraph} component="p">
-          Thanks for stopping by!
-        </Typography>
       </Paper>
     </section>
     <section style={styles.umSection}>
@@ -72,10 +69,6 @@ const Education = () => {
       </Typography>
       <Typography style={styles.paragraph} component="p">
         I got my masters at UM
-      </Typography>
-      <Typography style={styles.paragraph} component="p"> </Typography>
-      <Typography style={styles.paragraph} component="p">
-        Thanks for stopping by!
       </Typography>
     </Paper>
   </section>
