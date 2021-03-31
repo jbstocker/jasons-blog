@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: rgba(89, 89, 89, 0.1);
+}
+
+.section {
+  height: 40%;
+  scroll-margin-top: 5rem;
+}

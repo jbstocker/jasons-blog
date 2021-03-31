@@ -1,0 +1,12 @@
+.education {
+  height: 100%;
+}
+
+h1 {
+  position: relative;
+}
+
+.text-container {
+  max-width: 50%;
+  margin: 5%;
+}
