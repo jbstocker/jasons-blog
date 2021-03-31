@@ -1,0 +1,66 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  color: white;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.2s linear;
+}
+
+.navbar.expanded {
+  height: 5rem;
+}
+
+.navbar.collapsed {
+  height: 3rem;
+  background-color: #000000c4;
+}
+
+.navbar h1,
+.navbar i {
+  padding: 0 5px;
+  position: relative;
+  align-items: top;
+  transition: font-size 0.2s linear;
+  margin: 0em;
+}
+
+.navbar.expanded h1,
+.navbar.expanded i {
+  font-size: x-large;
+}
+
+.navbar.collapsed h1,
+.navbar.collapsed i {
+  font-size: medium;
+}
+
+.title {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  justify-content: left;
+  margin-left: 5%;
+}
+
+.navbar .linkbar {
+  width: 50vw;
+  text-align: right;
+  margin-right: 3%;
+}
+
+.navbar .linkbar i {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  padding: 0px 12px;
+}
+
+.navbar .linkbar i:hover {
+  transform: scale(1.3);
+}
