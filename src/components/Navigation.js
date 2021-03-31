@@ -1,55 +1,56 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
-import Drawer from "@material-ui/core/Drawer";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import IconButton from "@material-ui/core/IconButton";
-import Hidden from "@material-ui/core/Hidden";
-import MenuIcon from "@material-ui/icons/Menu";
-import Route from "react-router-dom/Route";
-import NavLinks from "./NavLinks";
-import About from "./About";
-import Experience from "./Experience";
-import Education from "./Education";
-import Contact from "./Contact";
-import Projects from "./Projects";
-import Skills from "./Skills";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import Drawer from '@material-ui/core/Drawer';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import Hidden from '@material-ui/core/Hidden';
+import MenuIcon from '@material-ui/icons/Menu';
+import Route from 'react-router-dom/Route';
+import NavLinks from './NavLinks';
+import About from './About';
+import Experience from './Experience';
+import Education from './Education';
+import Contact from './Contact';
+import Projects from './Projects';
+import Skills from './Skills';
 
 const drawerWidth = 180;
 
-const styles = theme => ({
+const styles = (theme) => ({
   root: {
     flexGrow: 1,
     zIndex: 1,
-    position: "relative",
-    display: "flex",
-    width: "100%",
-    height: "100%",
+    position: 'relative',
+    display: 'flex',
+    width: '100%',
+    height: '100%',
+    color: '#fff'
   },
   appBar: {
-    position: "absolute",
+    position: 'absolute',
     marginLeft: drawerWidth,
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up('md')]: {
       width: `calc(100% - ${drawerWidth}px)`
     }
   },
   navIconHide: {
-    [theme.breakpoints.up("md")]: {
-      display: "none"
+    [theme.breakpoints.up('md')]: {
+      display: 'none'
     }
   },
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
-    [theme.breakpoints.up("md")]: {
-      position: "relative"
+    [theme.breakpoints.up('md')]: {
+      position: 'relative'
     }
   },
   content: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.default
+    backgroundColor: '#fff'
   }
 });
 
@@ -59,7 +60,7 @@ class Navigation extends React.Component {
   };
 
   handleDrawerToggle = () => {
-    this.setState(state => ({ mobileOpen: !state.mobileOpen }));
+    this.setState((state) => ({ mobileOpen: !state.mobileOpen }));
   };
 
   render() {
@@ -69,12 +70,7 @@ class Navigation extends React.Component {
       <div className={classes.root}>
         <AppBar className={classes.appBar} color="primary">
           <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="Open drawer"
-              onClick={this.handleDrawerToggle}
-              className={classes.navIconHide}
-            >
+            <IconButton color="inherit" aria-label="Open drawer" onClick={this.handleDrawerToggle} className={classes.navIconHide}>
               <MenuIcon />
             </IconButton>
             <div>
@@ -87,7 +83,7 @@ class Navigation extends React.Component {
         <Hidden mdUp>
           <Drawer
             variant="temporary"
-            anchor={theme.direction === "rtl" ? "right" : "left"}
+            anchor={theme.direction === 'rtl' ? 'right' : 'left'}
             open={this.state.mobileOpen}
             onClose={this.handleDrawerToggle}
             classes={{
