@@ -16,10 +16,7 @@ function Education() {
           Engineering in Project Management from the University of Marlyand at College Park.
         </p>
       </div>
-      <div className="images-container">
         <div className="u-image psu-image"></div>
-        {/* <div className="u-image umd-image"></div> */}
-      </div>
     </div>
   );
 }
