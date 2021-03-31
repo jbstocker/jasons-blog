@@ -6,19 +6,19 @@ function Education() {
       <div className="text-container">
         <h1>Education</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-          obcaecati mollitia dicta est culpa repellat explicabo eius voluptates
-          nostrum magni ipsum quo, quidem voluptas cumque? Optio, et fugiat
-          molestias, iusto minima explicabo ipsam quasi adipisci qui assumenda
-          distinctio neque nemo. Distinctio ipsum pariatur ullam corporis?
-          Maiores voluptatibus inventore molestiae blanditiis. Ullam a ut
-          placeat non. Officia saepe magni omnis accusamus eveniet? Dignissimos
-          itaque natus, ad deleniti esse assumenda aspernatur tenetur! Harum
-          voluptatum ad aliquam adipisci cum consequuntur saepe deleniti
-          recusandae officiis quia itaque, libero totam sunt accusamus, quisquam
-          possimus eveniet at necessitatibus provident consequatur? Omnis
-          perferendis vel vitae iure numquam?
+          I earned my Bachelors or Science in Aerospace Engineering at the
+          Pennsylvania State University. During this time I worked as a lab
+          assistant in the Adverse Environment Rotor Test Stand (AERTS) where we
+          performed icing and de-icing experiements on rotor blades.
+          <br />
+          <br />
+          Later I made the plunge and went back to school to earn my Master of
+          Engineering in Project Management from the University of Marlyand at College Park.
         </p>
+      </div>
+      <div className="images-container">
+        <div className="u-image psu-image"></div>
+        {/* <div className="u-image umd-image"></div> */}
       </div>
     </div>
   );
