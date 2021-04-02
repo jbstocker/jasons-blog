@@ -64,3 +64,9 @@
 .navbar .linkbar i:hover {
   transform: scale(1.3);
 }
+
+@media only screen and (max-width: 650px) {
+  .navbar .linkbar {
+    display: none;
+  }
+}
