@@ -1,10 +1,9 @@
 .education {
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: left;
 }
 
 .education h1 {
@@ -12,16 +11,24 @@
 }
 
 .education .text-container {
-  max-width: 40%;
-  margin-left: 10%;
-  text-align: left;
+  text-align: center;
 }
 
-.education .u-image {
-  width: 60vw;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url('../../media/psuLogo1.png');
+.education .card-container {
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1250px) {
+  .education .card-container {
+    flex-direction: column;
+  }
+  .education .card-container div:nth-of-type(1) {
+    margin-bottom: 50px;
+  }
 }
