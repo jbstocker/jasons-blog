@@ -6,7 +6,11 @@
   justify-content: center;
   text-align: left;
   margin-top: 20px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: black;
+  outline-width: 0px;
+  margin-bottom: -1px; /* oddity to remove grey line at seams */
 }
 
 .contact i {
@@ -16,7 +20,7 @@
   align-items: top;
   transition: font-size 0.2s linear;
   margin: 0em;
-  color: black;
+  color: white;
 }
 
 .contact .text-container {
