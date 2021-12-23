@@ -12,7 +12,7 @@ function Projects() {
 
   const xclassTvRef = () => {
     return (
-    <a href="https://lightningjs.io/" target="_blank" rel="noopener noreferrer">XClass TV</a>
+    <a href="https://www.xclasstv.com/" target="_blank" rel="noopener noreferrer">XClass TV</a>
     )
   }
 
