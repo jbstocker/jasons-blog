@@ -1,0 +1,15 @@
+.copyright {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  background-color: black;
+}
+
+.copyright .text-container {
+  max-width: 80%;
+  text-align: left;
+  color: white;
+}

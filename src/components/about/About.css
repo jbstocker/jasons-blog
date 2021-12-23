@@ -1,42 +1,37 @@
 .about {
-  height: 100%;
+  height: 95vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: left;
-  margin-top: 30px;
+  background-image: url('../../media/bwMountain.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin-bottom: 20px;
 }
 
 .about .text-container {
-  max-width: 40%;
-  margin-left: 8%;
-  margin-right: 10%;
+  max-width: 100%;
+  margin-left: 45%;
+  margin-right: 5%;
   text-align: left;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 70%;
 }
 
-.about .profile-picture {
-  margin-left: 10%;
-  width: 25vw;
-  height: 25vw;
-  border-radius: 5%;
-  background-image: url("../../media/bwprofile.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
+.about .text-container h1, 
+.about .text-container p {
+  padding: 20px 20px 20px 20px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 650px) {
   .about {
-    flex-direction: column;
-  }
-  .about .profile-picture {
-    width: 30vw;
-    height: 30vw;
-    margin-left: 0;
-    margin-bottom: 30px;
+    background-position: right;
   }
   .about .text-container {
-    max-width: 80%;
-    margin-left: 10%;
-    text-align: left;
+    margin-left: 5%;
   }
 }

@@ -6,6 +6,17 @@
   justify-content: center;
   text-align: left;
   margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contact i {
+  font-size: 40px;
+  padding: 0 30px;
+  position: relative;
+  align-items: top;
+  transition: font-size 0.2s linear;
+  margin: 0em;
+  color: black;
 }
 
 .contact .text-container {

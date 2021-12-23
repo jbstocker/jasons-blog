@@ -11,12 +11,11 @@
 }
 
 .navbar.expanded {
-  height: 5rem;
+  height: 7vh;
 }
 
 .navbar.collapsed {
-  height: 3rem;
-  background-color: #000000c4;
+  height: 5vh;
 }
 
 .navbar h1,

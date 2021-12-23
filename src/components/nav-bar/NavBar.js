@@ -28,15 +28,13 @@ function NavBar(props) {
 
   return (
     <div className={`${expanded}`}>
-      <div className="title" onClick={scrollToTop}>
-        <i className="fas fa-code"></i>
-        <h1>JasonStocker.com</h1>
+      <div className="title">
+        <i className="fas fa-code" onClick={scrollToTop}></i>
+        <h1 onClick={scrollToTop}>JasonStocker.com</h1>
       </div>
       <div className="linkbar">
         <i className="fas fa-user" title="About" onClick={props.scrollToAbout}></i>
-        <i className="fas fa-graduation-cap" title="Education" onClick={props.scrollToEducation}></i>
         <i className="fas fa-project-diagram" title="Projects" onClick={props.scrollToProjects}></i>
-        <i className="fas fa-address-book" title="Contact" onClick={props.scrollToContact}></i>
         <a href={externalNavLinks.github} title="Github" target="_blank" rel="noreferrer">
           <i className="fab fa-github"></i>
         </a>
