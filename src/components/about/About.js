@@ -3,7 +3,6 @@ import './About.css';
 function About() {
   return (
     <div className="about">
-      {/* <div className="profile-picture"></div> */}
       <div className="text-container">
         <h1>Welcome!</h1>
         <p>

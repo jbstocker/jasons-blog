@@ -1,24 +1,50 @@
 import './Projects.css';
 
+
+
+
 function Projects() {
+  const lightningRef = () => {
+    return (
+    <a href="https://lightningjs.io/" target="_blank" rel="noopener noreferrer">LightningJS</a>
+    )
+  }
+
+  const xclassTvRef = () => {
+    return (
+    <a href="https://lightningjs.io/" target="_blank" rel="noopener noreferrer">XClass TV</a>
+    )
+  }
+
+  const githubInterviewRef = () => {
+    return (
+    <a href="https://github.com/jbstocker/lightning-interview-question" target="_blank" rel="noopener noreferrer">lightning-interview-question</a>
+    )
+  }
+
   return (
     <div className="projects">
-      <div className="text-container">
-        <h1>Projects</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-          obcaecati mollitia dicta est culpa repellat explicabo eius voluptates
-          nostrum magni ipsum quo, quidem voluptas cumque? Optio, et fugiat
-          molestias, iusto minima explicabo ipsam quasi adipisci qui assumenda
-          distinctio neque nemo. Distinctio ipsum pariatur ullam corporis?
-          Maiores voluptatibus inventore molestiae blanditiis. Ullam a ut
-          placeat non. Officia saepe magni omnis accusamus eveniet? Dignissimos
-          itaque natus, ad deleniti esse assumenda aspernatur tenetur! Harum
-          voluptatum ad aliquam adipisci cum consequuntur saepe deleniti
-          recusandae officiis quia itaque, libero totam sunt accusamus, quisquam
-          possimus eveniet at necessitatibus provident consequatur? Omnis
-          perferendis vel vitae iure numquam?
-        </p>
+      <div className='project-section'>
+        <div className='image xclass' />
+        <div className="text-container">
+          <h1>XClass TV</h1>
+          <p>
+            I currently work as the engineering manager for the {xclassTvRef()} user interface.
+            XClass TV is brand new smart TV user interface, built using the {lightningRef()} framework.
+          </p>
+        </div>
+      </div>
+      <div className='project-section'>
+      <div className='image interview' />
+        <div className="text-container">
+          <h1>Interview Questions Project</h1>
+          <p>
+            As an engineering manager I have decided to start creating a series of repositories that offer hiring managers
+            a resource to test potential candidates.  
+            The first example({githubInterviewRef()}) is already live and in use today as a {lightningRef()} based challenge.  
+            These challenges are set to be done in a reasonable amount of time and should show off the basic skills of a candidate. 
+          </p>
+        </div>
       </div>
     </div>
   );
