@@ -27,6 +27,16 @@
   padding: 20px 20px 20px 20px;
 }
 
+@media only screen and (max-height: 700px) {
+  .about .text-container h1 {
+    font-size: x-large;
+  }
+  .about .text-container p {
+    font-size: large;
+    line-height: normal;
+}
+}
+
 @media only screen and (max-width: 800px) {
   .about {
     background-position: right;
