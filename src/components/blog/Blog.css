@@ -1,0 +1,30 @@
+.blog {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.blog h1 {
+  padding-bottom: 0px;
+}
+
+.blog-grid {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 5%;
+}
+
+.blog-tile {
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer;
+  width: 250px;
+  height: 300px;
+}
+
+.blog-tile:hover {
+  transform: scale(1.02);
+}

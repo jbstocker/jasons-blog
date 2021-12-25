@@ -1,0 +1,20 @@
+.postTile {
+  height: 100%;
+  width: 100%;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.postTile h3 {
+  margin-top: 2%;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.postTile p {
+  font-size: medium;
+  margin-right: 2%;
+  margin-left: 2%;
+}
