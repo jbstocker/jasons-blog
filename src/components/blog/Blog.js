@@ -26,7 +26,7 @@ function Blog() {
     <div>
       <NavBar title='JasonStocker.com/blog' scrollToAbout={toHome} scrollToProjects={toHome} />
       <div className="blog">
-        <h1>Welcome to my blog!</h1>
+        <h1>Check out some posts below!</h1>
         <div className="blog-grid">
           {postTiles()}
         </div>

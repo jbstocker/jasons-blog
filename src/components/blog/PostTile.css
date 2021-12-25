@@ -2,7 +2,7 @@
   height: 100%;
   width: 100%;
   color: black;
-  border: 1px solid black;
+  background-color: rgba(0,0,0,0.1);
   border-radius: 20px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -15,6 +15,8 @@
 
 .postTile p {
   font-size: medium;
+  margin-top: 2%;
   margin-right: 2%;
   margin-left: 2%;
+  line-height: 20px;
 }

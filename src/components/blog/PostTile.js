@@ -3,10 +3,13 @@ function PostTile(props) {
   console.log(props)
   const imageStyle = {
     backgroundImage: `url(${props.imageUrl})`,
-    backgroundSize: 'contain',
+    backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     height: '150px',
-    width: '200px',
+    width: '250px',
+    marginTop: '10px',
+    borderRadius: '20px'
+
   }
   return (
     <div className="postTile">
