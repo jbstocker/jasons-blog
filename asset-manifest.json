@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.df05371f.css",
+    "main.js": "/static/js/main.f87076de.js",
+    "static/js/180.81f2aa61.chunk.js": "/static/js/180.81f2aa61.chunk.js",
+    "static/js/787.80c332c9.chunk.js": "/static/js/787.80c332c9.chunk.js",
+    "static/media/lightning-interview-success.gif": "/static/media/lightning-interview-success.a34b70b686a489ba12b1.gif",
+    "static/media/xclassTvSearch.png": "/static/media/xclassTvSearch.5f202413d5716affc143.png",
+    "static/media/bwMountain.jpg": "/static/media/bwMountain.f64b180bde5abf37b82c.jpg",
+    "static/media/first_post.md": "/static/media/first_post.dc813716ed48ffa2369f.md",
+    "index.html": "/index.html",
+    "main.df05371f.css.map": "/static/css/main.df05371f.css.map",
+    "main.f87076de.js.map": "/static/js/main.f87076de.js.map",
+    "787.80c332c9.chunk.js.map": "/static/js/787.80c332c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df05371f.css",
+    "static/js/main.f87076de.js"
+  ]
+}

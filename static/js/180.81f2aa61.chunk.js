@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjasons_blog=self.webpackChunkjasons_blog||[]).push([[180],{180:function(s,e,t){s.exports=t.p+"static/media/first_post.dc813716ed48ffa2369f.md"}}]);
