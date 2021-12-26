@@ -1,10 +1,26 @@
 .cover-image {
   margin-top: 20px;
-  height: 50vh;
+  max-height: 50vh;
+  max-width: 90vw;
 }
 
 .article {
   margin-left: 10%;
   margin-right: 10%;
   text-align: left;
+}
+
+.post h2 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.post h3 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: large;
+}
+
+.post li {
+  font-size: large;
 }

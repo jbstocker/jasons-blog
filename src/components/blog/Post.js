@@ -38,8 +38,9 @@ function Post(props) {
   return (
     <div className="post">
       <NavBar title='JasonStocker.com/blog' scrollToAbout={toHome} scrollToProjects={toHome} />
-      <img className='cover-image' src={coverImage} alt='cover'></img>
+      <img className='cover-image' src={coverImage} alt='blog cover image'></img>
       <h2>{props.postData.title}</h2>
+      <h3>{props.postData.date}</h3>
       <Markdown className='article'>
         {post}
       </Markdown>
