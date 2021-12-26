@@ -1,4 +1,4 @@
-Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
+Lorem `markdownum` fine incustoditam unda factura versum occuluere Aeneas, iuvat
 haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
 manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
 verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
@@ -18,10 +18,12 @@ consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
 Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
 procul fugitque corpora iugales!
 
-    var ethics_font_drive = cycleSystemProgram + deprecatedTransferIp.ide(3) /
-            rgb + nybbleBaseband;
-    permalinkCertificateMacintosh(ergonomicsIsdnDns);
-    boot = bridgeDaemonActive;
+```javascript
+var ethics_font_drive = cycleSystemProgram + deprecatedTransferIp.ide(3) /
+rgb + nybbleBaseband;
+permalinkCertificateMacintosh(ergonomicsIsdnDns);
+boot = bridgeDaemonActive;
+```
 
 ## O contra diu
 
