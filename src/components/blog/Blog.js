@@ -15,8 +15,8 @@ function Blog() {
   const postTiles = () => {
     return blogPosts.map((post) => {
       return (
-        <div key={post.url} className="blog-tile" onClick={() => {navigate(`/blog/${post.url}`)}}>
-          <PostTile key={post.url} title={post.title} excerpt={post.excerpt} imageUrl={post.cover_image} />
+        <div key={post.url} className="blog-tile" onClick={() => { navigate(`/blog/${post.url}`) }}>
+          <PostTile key={post.url} title={post.title} excerpt={post.excerpt} date={post.date} imageUrl={post.cover_image} tags={post.tags} />
         </div>
       )
     })
@@ -26,7 +26,6 @@ function Blog() {
     <div>
       <NavBar title='JasonStocker.com/blog' scrollToAbout={toHome} scrollToProjects={toHome} />
       <div className="blog">
-        <h1>Check out some posts below!</h1>
         <div className="blog-grid">
           {postTiles()}
         </div>

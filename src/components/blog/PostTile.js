@@ -1,6 +1,6 @@
 import './PostTile.css'
+import Tags from './Tags';
 function PostTile(props) {
-  console.log(props)
   const imageStyle = {
     backgroundImage: `url(${props.imageUrl})`,
     backgroundSize: 'cover',
@@ -14,8 +14,12 @@ function PostTile(props) {
   return (
     <div className="postTile">
       <div style={imageStyle}></div>
+      <div className='postDate'>
+        <p>{props.date}</p>
+        </div>
       <h3>{props.title}</h3>
       <p>{props.excerpt}</p>
+      <Tags tags={props.tags}/>
     </div>
   )
 }

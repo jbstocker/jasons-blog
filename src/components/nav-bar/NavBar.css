@@ -69,6 +69,11 @@
   .navbar .linkbar h1 {
     font-size: large;
   }
+
+  .navbar.expanded h1,
+  .navbar.expanded i {
+    font-size: large;
+}
 }
 
 @media only screen and (max-width: 600px) {

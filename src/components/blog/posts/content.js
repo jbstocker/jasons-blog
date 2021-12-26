@@ -5,7 +5,8 @@ const content = [
     contentFile: 'first_post.md',
     date: 'December 25, 2021',
     excerpt: 'This is my first post on a brand new blog!',
-    cover_image: '/images/photosdubai.jpg'
+    cover_image: '/images/photosdubai.jpg',
+    tags: ['personal', 'webdev']
   },
   {
     url: 'test_post',
@@ -13,31 +14,8 @@ const content = [
     contentFile: 'test_post.md',
     date: 'December 25, 2021',
     excerpt: 'This is my first post on a brand new blog!',
-    cover_image: '/images/photosdubai.jpg'
-  },
-  {
-    url: 'test_post2',
-    title: 'Testing post2',
-    contentFile: 'test_post.md',
-    date: 'December 25, 2021',
-    excerpt: 'This is my first post on a brand new blog!',
-    cover_image: '/images/photosdubai.jpg'
-  },
-  {
-    url: 'test_post3',
-    title: 'Testing post3',
-    contentFile: 'test_post.md',
-    date: 'December 25, 2021',
-    excerpt: 'This is my first post on a brand new blog!',
-    cover_image: '/images/photosdubai.jpg'
-  },
-  {
-    url: 'test_post4',
-    title: 'Testing post4',
-    contentFile: 'test_post.md',
-    date: 'December 25, 2021',
-    excerpt: 'This is my first post on a brand new blog!',
-    cover_image: '/images/photosdubai.jpg'
+    cover_image: '/images/photosdubai.jpg',
+    tags: ['personal', 'webdev', 'test1']
   }
 ]
 
