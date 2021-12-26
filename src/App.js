@@ -11,7 +11,6 @@ import blogPosts from './components/blog/posts/content'
 import Post from './components/blog/Post';
 
 const getBlogs = () => {
-  console.log(blogPosts[0].url)
   const postRoutes = blogPosts.map((posts) => {
     return (
       <Route key={posts.url} path={`/blog/${posts.url}`} element={<Post postData={posts}/>} />

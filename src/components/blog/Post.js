@@ -18,6 +18,9 @@ function Post(props) {
 
   useEffect(() => {
     Prism.highlightAll();
+  });
+
+  useEffect(() => {
     import(`./posts/${props.postData.contentFile}`)
       .then(res => {
         fetch(res.default)
