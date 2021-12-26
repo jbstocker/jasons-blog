@@ -1,52 +1,25 @@
-Lorem `markdownum` fine incustoditam unda factura versum occuluere Aeneas, iuvat
-haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
-manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
-verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
-pavida ne omnes etiam, atque. Sonuit omina sed sine haerebat illic fit a mora
-in.
+Hey you found me! This is my first blog post on a site I have been rewriting over and over again without committing to for a couple years now. Well in 2022 I intend to change that - my resolutions this year are focused on contributions:
 
-1. Serrae enim Etruscam aquis
-2. Et premis et flumine frontem minatur oppressos
-3. Inquam rector Icarus possum vim tumulo propiusque
-4. Vulnus se Latreus
-5. Aptumque bis
+1. Contribute more to this site (mostly blog posts)
+2. Contribute to my local computer science community
+3. Contribute to more open source projects
 
-## Turpius Aegides membris colat volentes fallere
+Below are some topics I'd like to focus on going forward:
 
-Ille fida formosus, et addunt viscera perdidit ad pondere quia tellus
-consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
-Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
-procul fugitque corpora iugales!
+## Software and Software management
 
-```javascript
-var ethics_font_drive = cycleSystemProgram + deprecatedTransferIp.ide(3) /
-rgb + nybbleBaseband;
-permalinkCertificateMacintosh(ergonomicsIsdnDns);
-boot = bridgeDaemonActive;
-```
+My full time gig is in software engineering, specifically I am currently working as a Software Engineering Manager.  My primary focus is on frontend, so most of my posts going forward will be explaining frontend concepts or describing the learning process when I decide to branch out.
 
-## O contra diu
+This page was built using ReactJS, with blog posts written in markdown and converted to JSX. I might go into more detail in the future on the construction since I found that other examples were either too complex for my liking or relied too heavily on libraries.
 
-Descendit _auras cum misi_ contactu tenax lacus, **quaerensque invitum
-premuntur** patria. Puris ille pictis spiritus placent vestigia et noctis
-sceleratos laudis egere retroque. Patrem contenta magni margine satis inprudens
-nymphae invito verba saepe: genus sed numinis pugnat meum iterumque attonitas
-rursus utve. Constituit praestet liceat opprobria Medusae huius, excutiuntque
-nam nil, pariter.
+## Photograhy
 
-Coma **laudes manet** ausus hortaturque matrisque Veneris proximus tu iamque
-aptius claudit. Tmolus tetigere iussos animumque quid poplite Hippotaden? Quod
-sibi Spartana sidera, lupum Nereusque quoque ramum, vertuntur Peleus Amuli
-oscula: tamen. Surgere Epidaurius movit crede soceri Euboicam quoque.
+I'm an avid photography and traveler.  My initial intent for this blog was primarily photo based, but as I started to lead engineering teams I realized how much I enjoy teaching and talking tech, so instead I'll just make the blog about things I like in general, including photography (and of course photography gear)
 
-Unde stabant, acuta, percussit denique; hoc illic et herbis minimas parvum? Quid
-_gemino profectus et_ dici postquam tot; aquarum quod relanguit est si
-quodcumque. Ossaque protinus, quod somno est, repetit, hoc passu est. Qui devia;
-respice humum vobis oscula, in Lotis nymphae.
+## Woodworking/DIY
 
-Dolet certamina velle dexteriore mutatus saepe, tellure ubi unguibus, gestu.
-Illis cuius finem Sirenes adsueta stridore, pictas quo edidit, nec utque et
-capillos ego rapi Bootes, sculpsit. Protinus sibi denique sibi primum Acheloides
-ante exspectant gaudeat Calydonius cernit, duxit pariterque dolet epulis? Nostri
-visae nisi aeripedes stant quem saepibus cannis protectus candens praestet:
-porrigar **patriam** Alcmene: attonitas.
+The honey-do list is long and it grow, grows, grows... Just kidding (sorta) but I also love woodworking and building new things/furniture in our home. I might even do a retroactive post or two on some of our home renovations because Instagram loved the before/after - might as well steal it.
+
+## Thanks
+
+You made it to the end - thanks!  I hope to provide some more elaborate posts soon.  2022 here we come!
