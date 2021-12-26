@@ -51,6 +51,9 @@
   width: 50vw;
   text-align: right;
   margin-right: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
 }
 
 .navbar .linkbar i {
@@ -66,20 +69,33 @@
 
 @media only screen and (max-width: 800px) {
   .navbar .linkbar i,
-  .navbar .linkbar h1 {
+  .navbar .linkbar h1,
+  .navbar.expanded h1,
+  .navbar.expanded i {
     font-size: large;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .navbar .linkbar i,
-  .navbar .linkbar h1 {
+  .navbar .linkbar h1,
+  .navbar.expanded h1,
+  .navbar.expanded i {
     font-size: medium;
   }
 }
 
+@media only screen and (max-width: 300px) {
+  .navbar .linkbar i,
+  .navbar .linkbar h1,
+  .navbar.expanded h1,
+  .navbar.expanded i {
+    font-size: 12px;
+  }
+}
+
 @media only screen and (max-width: 480px) {
-  .navbar .linkbar {
+  .navbar .linkbar .externalNav {
     display: none;
   }
 }

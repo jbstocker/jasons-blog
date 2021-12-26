@@ -1,40 +1,37 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './App.css';
-import About from './components/about/About';
-import NavBar from './components/nav-bar/NavBar';
-import Projects from './components/projects/Projects';
-import Contact from './components/contact/Contact';
-import Copyright from './components/copyright/Copyright';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import Home from './components/home/Home';
+import Blog from './components/blog/Blog'
+import blogPosts from './components/blog/posts/content'
+import Post from './components/blog/Post';
+
+const getBlogs = () => {
+  const postRoutes = blogPosts.map((posts) => {
+    return (
+      <Route key={posts.url} path={`/blog/${posts.url}`} element={<Post postData={posts}/>} />
+    )
+  })
+  return (
+    postRoutes
+  )
+}
 
 function App() {
-
-  const aboutRef = useRef();
-  const projectsRef = useRef();
-  const contactRef = useRef();
-
-  function scrollToAbout() {
-    aboutRef.current.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest" })
-  }
-
-  function scrollToProjects() {
-    projectsRef.current.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest" })
-  }
-
+  
   return (
     <div className="App">
-      <NavBar scrollToAbout={scrollToAbout} scrollToProjects={scrollToProjects} />
-      <div className="section" ref={aboutRef}>
-        <About />
-      </div>
-      <div className="section" ref={projectsRef}>
-        <Projects />
-      </div>
-      <div className="section" ref={contactRef}>
-        <Contact />
-      </div>
-      <div>
-        <Copyright />
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          {getBlogs()}
+        </Routes>
+      </Router>
     </div>
   );
 }
