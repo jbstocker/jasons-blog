@@ -4,7 +4,7 @@ import Copyright from "../copyright/Copyright";
 import Contact from "../contact/Contact";
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import Prism from "prismjs";
+// import Prism from "prismjs";
 import './Post.css'
 import './prism.css'
 
@@ -16,9 +16,9 @@ function Post(props) {
   const [post, setPost] = useState('');
   const [coverImage, setCoverImage] = useState('');
 
-  useEffect(() => {
-    Prism.highlightAll();
-  });
+  // useEffect(() => {
+  //   Prism.highlightAll();
+  // });
 
   useEffect(() => {
     import(`./posts/${props.postData.contentFile}`)
