@@ -40,7 +40,7 @@ function NavBar(props) {
       </div>
       <div className="linkbar">
         <div className="internal-nav">
-          <i className="fas fa-user" title="About" onClick={props.scrollToAbout}></i>
+          <i className="fas fa-home" title="About" onClick={props.scrollToAbout}></i>
           {/* <i className="fas fa-project-diagram" title="Projects" onClick={props.scrollToProjects}></i> */}
           <i className="fas fa-blog" title="Blog" onClick={toBlog}></i>
         </div>
