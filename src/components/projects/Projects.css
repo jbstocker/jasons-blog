@@ -50,7 +50,8 @@
   background-position: center
 } */
 
-.projects img {
+.projects img,
+.projects video {
   max-width: 30vw;
   height: 100%;
   margin-left: 5%;
@@ -86,7 +87,8 @@
 
   }
 
-  .projects img {
+  .projects img,
+  .projects video {
     margin: 0%;
     min-width: 80vw;
   }

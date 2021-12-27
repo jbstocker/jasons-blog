@@ -35,7 +35,11 @@ function Projects() {
         </div>
       </div>
       <div className='project-section'>
-      <img src='/images/lightning-interview-success.gif' alt='A basic searchpage' loading='lazy'></img>
+      <video autoPlay muted loop playsinline>
+        <source src="/videos/InterviewQuestions.webm" type="video/webm" />
+        <source src="/videos/InterviewQuestions.mp4" type="video/mp4" />
+      </video>
+      {/* <img src='/images/lightning-interview-success.gif' alt='A basic searchpage' loading='lazy'></img> */}
         <div className="text-container">
           <h1>Interview Questions Project</h1>
           <p>
