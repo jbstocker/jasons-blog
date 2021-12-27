@@ -25,7 +25,7 @@ function Projects() {
   return (
     <div className="projects">
       <div className='project-section'>
-        <img src='/images/xclassTvSearch.png' alt='Xclass tv' loading='lazy'></img>
+        <img src='/images/xclassTvSearch.webp' alt='Xclass tv' loading='lazy'></img>
         <div className="text-container">
           <h1>XClass TV</h1>
           <p>
