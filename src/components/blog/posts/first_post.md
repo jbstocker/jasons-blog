@@ -14,7 +14,7 @@ This page was built using ReactJS, with blog posts written in markdown and conve
 
 ## Photograhy
 
-I'm an avid photography and traveler.  My initial intent for this blog was primarily photo based, but as I started to lead engineering teams I realized how much I enjoy teaching and talking tech, so instead I'll just make the blog about things I like in general, including photography (and of course photography gear)
+I'm an avid photographer and traveler.  My initial intent for this blog was primarily photo based, but as I started to lead engineering teams I realized how much I enjoy teaching and talking tech, so instead I'll just make the blog about things I like in general, including photography (and of course photography gear)
 
 ## Woodworking/DIY
 
