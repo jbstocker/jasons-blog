@@ -14,7 +14,8 @@ function Post(props) {
     navigate('/');
   }
   const [post, setPost] = useState('');
-  const [coverImage, setCoverImage] = useState('');
+  const [contact, setContact] = useState();
+  const [copyright, setCopyright] = useState();
 
   useEffect(() => {
     Prism.highlightAll();
@@ -27,18 +28,19 @@ function Post(props) {
           .then(res => res.text())
           .then(res => {
             setPost(res)
+            setContact(() => <Contact />)
+            setCopyright(() => <Copyright />)
           })
           .catch(err => console.log(err));
       })
       .catch(err => console.log(err));
-    setCoverImage(props.postData.cover_image)
   }, [props.postData.contentFile, props.postData.cover_image]);
 
 
   return (
     <div className="post">
       <NavBar title='JasonStocker.com/blog' scrollToAbout={toHome} scrollToProjects={toHome} />
-      <img className='cover-image' src={coverImage} alt={props.postData.cover_image_alt}></img>
+      <img className='cover-image' src={props.postData.cover_image} alt={props.postData.cover_image_alt}></img>
       <h1>{props.postData.title}</h1>
       <h3>{props.postData.date}</h3>
       <div className="article">
@@ -46,8 +48,8 @@ function Post(props) {
           {post}
         </Markdown>
       </div>
-      <Contact />
-      <Copyright />
+      {contact}
+      {copyright}
     </div>
 
   )

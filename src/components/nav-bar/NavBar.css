@@ -62,9 +62,9 @@
   padding: 0px 12px;
 }
 
-.navbar .linkbar i:hover {
+/* .navbar .linkbar i:hover {
   transform: scale(1.3);
-}
+} */
 
 @media only screen and (max-width: 800px) {
   .navbar .linkbar i,
