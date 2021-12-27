@@ -35,7 +35,7 @@ function Projects() {
         </div>
       </div>
       <div className='project-section'>
-      <video autoPlay muted loop playsinline>
+      <video autoPlay  muted loop playsInline>
         <source src="/videos/InterviewQuestions.webm" type="video/webm" />
         <source src="/videos/InterviewQuestions.mp4" type="video/mp4" />
       </video>
