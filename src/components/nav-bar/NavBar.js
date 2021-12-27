@@ -39,13 +39,13 @@ function NavBar(props) {
         <h1 onClick={scrollToTop}>{props.title}</h1>
       </div>
       <div className="linkbar">
-        <i className="fas fa-home" title="About" onClick={props.scrollToAbout}></i>
-        <i className="fas fa-blog" title="Blog" onClick={toBlog}></i>
+        <p className="home" onClick={props.scrollToAbout}>home</p>
+        <p onClick={toBlog}>blog</p>
         <a className="externalNav" href={externalNavLinks.github} title="Github" target="_blank" rel="noreferrer">
-          <i className="fab fa-github"></i>
+          <p>github</p>
         </a>
         <a className="externalNav" href={externalNavLinks.linkedIn} title="LinkedIn" target="_blank" rel="noreferrer">
-          <i className="fab fa-linkedin"></i>
+          <p>linkedIn</p>
         </a>
       </div>
     </div>

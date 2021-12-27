@@ -20,12 +20,13 @@
 }
 
 .navbar h1,
-.navbar i {
+.navbar i,
+.navbar p {
   padding: 0 5px;
   position: relative;
-  align-items: top;
   transition: font-size 0.2s linear;
   margin: 0em;
+  padding-top: 0;
 }
 
 .navbar.expanded h1,
@@ -34,7 +35,8 @@
 }
 
 .navbar.collapsed h1,
-.navbar.collapsed i {
+.navbar.collapsed i,
+.navbar.navbar.collapsed p {
   font-size: medium;
 }
 
@@ -49,10 +51,11 @@
 
 .navbar .linkbar {
   text-align: right;
-  margin-right: 10px;
+  margin-right: 20px;
   display: flex;
   flex-direction: row;
   justify-content: right;
+  gap: 10px;
 }
 
 .navbar .linkbar i {
@@ -60,6 +63,19 @@
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   padding: 0px 12px;
+}
+
+.navbar .linkbar a:link,
+.navbar .linkbar a:visited,
+.navbar .linkbar a:hover,
+.navbar .linkbar a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .linkbar p {
+  font-size: x-large;
+  padding-top: 0;
 }
 
 /* .navbar .linkbar i:hover {
@@ -70,7 +86,8 @@
   .navbar .linkbar i,
   .navbar .linkbar h1,
   .navbar.expanded h1,
-  .navbar.expanded i {
+  .navbar.expanded i,
+  .navbar .linkbar p {
     font-size: large;
   }
 }
@@ -79,7 +96,8 @@
   .navbar .linkbar i,
   .navbar .linkbar h1,
   .navbar.expanded h1,
-  .navbar.expanded i {
+  .navbar.expanded i,
+  .navbar .linkbar p {
     font-size: medium;
   }
 }
@@ -88,7 +106,8 @@
   .navbar .linkbar i,
   .navbar .linkbar h1,
   .navbar.expanded h1,
-  .navbar.expanded i {
+  .navbar.expanded i,
+  .navbar .linkbar p {
     font-size: 12px;
   }
 }
