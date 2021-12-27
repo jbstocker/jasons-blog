@@ -44,13 +44,13 @@
   align-items: center;
   cursor: pointer;
   justify-content: left;
-  margin-left: 5%;
+  margin-left: 20px;
 }
 
 .navbar .linkbar {
   width: 50vw;
   text-align: right;
-  margin-right: 3%;
+  margin-right: 10px;
   display: flex;
   flex-direction: row;
   justify-content: right;

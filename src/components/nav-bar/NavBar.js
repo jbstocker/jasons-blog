@@ -40,7 +40,6 @@ function NavBar(props) {
       </div>
       <div className="linkbar">
         <i className="fas fa-home" title="About" onClick={props.scrollToAbout}></i>
-        {/* <i className="fas fa-project-diagram" title="Projects" onClick={props.scrollToProjects}></i> */}
         <i className="fas fa-blog" title="Blog" onClick={toBlog}></i>
         <a className="externalNav" href={externalNavLinks.github} title="Github" target="_blank" rel="noreferrer">
           <i className="fab fa-github"></i>
