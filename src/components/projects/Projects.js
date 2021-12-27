@@ -25,7 +25,7 @@ function Projects() {
   return (
     <div className="projects">
       <div className='project-section'>
-        <div className='image xclass' />
+        <img src='/images/xclassTvSearch.png' alt='Xclass tv' loading='lazy'></img>
         <div className="text-container">
           <h1>XClass TV</h1>
           <p>
@@ -35,7 +35,7 @@ function Projects() {
         </div>
       </div>
       <div className='project-section'>
-      <div className='image interview' />
+      <img src='/images/lightning-interview-success.gif' alt='A basic searchpage' loading='lazy'></img>
         <div className="text-container">
           <h1>Interview Questions Project</h1>
           <p>
