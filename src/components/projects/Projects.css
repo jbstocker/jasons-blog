@@ -40,16 +40,6 @@
   width: 100%;
 }
 
-/* .projects .image {
-  min-width: 30vw;
-  min-height: 30vh;
-  height: 100%;
-  margin-left: 5%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center
-} */
-
 .projects img,
 .projects video {
   max-width: 30vw;
