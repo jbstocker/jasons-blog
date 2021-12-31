@@ -76,6 +76,7 @@
 .navbar .linkbar p {
   font-size: x-large;
   padding-top: 0;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {
