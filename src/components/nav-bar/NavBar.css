@@ -8,7 +8,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.2s linear;
+  transition: all 0.1s linear;
 }
 
 .navbar.expanded {
@@ -24,7 +24,7 @@
 .navbar p {
   padding: 0 5px;
   position: relative;
-  transition: font-size 0.2s linear;
+  transition: font-size 0.1s linear;
   margin: 0em;
   padding-top: 0;
 }

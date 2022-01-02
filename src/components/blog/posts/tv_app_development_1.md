@@ -1,0 +1,15 @@
+Web development on TV's has undergone a large transition over the past decade. Smart TV's have become the norm as the advent of streaming platforms has quickly overtaken the traditional cable market. 
+
+There are a number of special considerations that need to be taken into account when developing for the TV, in particular I want to quickly talk about items that go beyond just tech stack (a complex TV topic in it of itself): navigation, and focus.
+
+## Navigation
+TV navigation, for the most part, is one of the last bastions of button only user interface navigation. Several TV manufacturers have attempted to replicate mouse or touch behavior but for the most part d-pad (directional pad, aka arrow buttons) is still the dominant form of input for navigating a TV interface.
+
+There are many ramifications of this, one of the more obvious being that the UI needs to be much more strict when it comes to adhering to a grid. Since the user only has access to left, right, down, and up - the components of your interface should adhere to the same directions. Abstract shapes that appear diagonal to other items will only serve to confuse and frustrate a user.
+
+Another item that requires consideration in the realm of navigation is the cost of action. For phones and computers the cost of 'going back' on a web app is quite minimal - normally a swipe with two fingers or a quick press of a back button is sufficient and obvious. For TV interfaces a dedicated back button is not guranteed on the remote and navigating to an on screen button can be a costly action for a user, especially if the user is currently focused deep in a grid. To alleviate this a common technique is to provide some form of menu breadcrumb as you navigate deeper into the interface. We can then use this breadcrumb as an element itself to be navigated to - like pressing left arrow all the way until you encounter the breadcrumb which might then take a user back to the previous page/menu.
+
+## Focus
+Focus is the natural continuation of the navigation topic. For a TV interface we can utilize the the fact that we _know_ where a user is focused unlike most other mediums. This is one of the few benefits of TV interface development over other platforms - and it is important to take advantage of this. A controversial yet widely known example is Netflix's use of user focus to automatically play a trailer or clip of the content the user is focused on. I personally think the concept works quite well and have grown to really like the feature but I have also talked to numerous people who hate it and find it to be a jarring addition to their preferred browse experience.
+
+The point here is that we need to be careful and considerate with how we leverager focus in TV interfaces. Your user is likely also _looking_ at the place where the focus is on the interface, so it's doubly important that any animation or state change that takes place based on this focus is polished and enhances rather than detracts from the experience. Plan out how focus should impact your user - provide detail on content or actions that can be taken dynamically based on focus.
