@@ -5,7 +5,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: left;
-  background-image: url('../../media/bwMountain.jpg');
+  background-image: url('../../media/canyonBackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -14,8 +14,8 @@
 
 .about .text-container {
   max-width: 100%;
-  margin-left: 45%;
-  margin-right: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
   text-align: left;
   color: white;
   background-color: black;
@@ -29,6 +29,10 @@
 }
 
 @media only screen and (max-height: 700px) {
+  .about .text-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
   .about .text-container h1 {
     font-size: x-large;
   }
@@ -44,5 +48,6 @@
   }
   .about .text-container {
     margin-left: 5%;
+    margin-right: 5%;
   }
 }
