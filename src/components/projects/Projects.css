@@ -2,9 +2,8 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: left;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -32,7 +31,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   margin-bottom: 100px;
 }
 
@@ -42,7 +40,7 @@
 
 .projects img,
 .projects video {
-  max-width: 30vw;
+  width: 30vw;
   margin-left: 5%;
 }
 
@@ -55,7 +53,7 @@
 }
 
 .projects .text-container {
-  max-width: 80%;
+  width: 70vw;
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
@@ -73,7 +71,6 @@
     margin-top: 30px;
     margin-left: 0%;
     margin-right: 0%;
-
   }
 
   .projects img,
@@ -81,5 +78,4 @@
     margin: 0%;
     min-width: 80vw;
   }
-
 }
