@@ -15,9 +15,9 @@
   height: 7vh;
 }
 
-.navbar.collapsed {
+/* .navbar.collapsed {
   height: 5vh;
-}
+} */
 
 .navbar h1,
 .navbar i,
@@ -34,11 +34,11 @@
   font-size: x-large;
 }
 
-.navbar.collapsed h1,
+/* .navbar.collapsed h1,
 .navbar.collapsed i,
 .navbar.navbar.collapsed p {
   font-size: medium;
-}
+} */
 
 .title {
   display: flex;
