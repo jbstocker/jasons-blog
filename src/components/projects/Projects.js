@@ -17,12 +17,8 @@ function Projects() {
 
   const xclassTvRef = () => {
     return (
-      <a
-        href='https://www.xclasstv.com/'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        XClass TV
+      <a href='https://tv.xumo.com/' target='_blank' rel='noopener noreferrer'>
+        Xumo TV
       </a>
     );
   };
@@ -49,11 +45,11 @@ function Projects() {
         <div className='project-section'>
           <img
             src='/images/xclassTvSearch.webp'
-            alt='Xclass tv'
+            alt='Xumo tv'
             loading='lazy'
           ></img>
           <div className='text-container'>
-            <h1>XClass TV</h1>
+            <h1>Xumo TV</h1>
             <p>
               I currently work as the engineering manager for the{' '}
               {xclassTvRef()} user interface. XClass TV is brand new smart TV
