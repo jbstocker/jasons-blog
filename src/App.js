@@ -1,35 +1,34 @@
 import React from 'react';
 import './App.css';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/home/Home';
-import Blog from './components/blog/Blog'
-import blogPosts from './components/blog/posts/content'
+import Blog from './components/blog/Blog';
+import blogPosts from './components/blog/posts/content';
 import Post from './components/blog/Post';
+import Evite from './components/Evite/Evite';
 
 const getBlogs = () => {
   const postRoutes = blogPosts.map((posts) => {
     return (
-      <Route key={posts.url} path={`/blog/${posts.url}`} element={<Post postData={posts}/>} />
-    )
-  })
-  return (
-    postRoutes
-  )
-}
+      <Route
+        key={posts.url}
+        path={`/blog/${posts.url}`}
+        element={<Post postData={posts} />}
+      />
+    );
+  });
+  return postRoutes;
+};
 
 function App() {
-  
   return (
-    <div className="App">
+    <div className='App'>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/blog' element={<Blog />} />
           {getBlogs()}
+          <Route path='/evite' element={<Evite />} />
         </Routes>
       </Router>
     </div>
